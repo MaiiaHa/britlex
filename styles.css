@@ -1,0 +1,23 @@
+:root {
+  /* background */
+  --main-bg-color: #ffffff;
+  --secondary-bg-color: #939393;
+  --cards-bg-color: #f5f5f5;
+  --btn-bg-color: #263238;
+
+  /* font */
+  --main-font-color: #8f95a5;
+  --secondary-font-color: #263238;
+  --additional-font-color: #000000;
+  --price-font-color: #2a3246;
+  --secondary-price-font-color: #546269;
+
+  --btn-font-color: #ffffff;
+  --btn-secondary-font-color: #000000;
+
+  --logo-first-font-color: #000000;
+  --logo-secondary-font-color: #939393;
+}
+.list {
+  text-decoration: none;
+}
