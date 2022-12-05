@@ -64,19 +64,24 @@ img {
 }
 .container {
   /* width: 100% на етапі  */
-  width: 320px;
+  /* width: 320px; */
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto; /* або margin-left margin-right - auto */
   outline: 1px solid tomato;
+
+  @media screen and (max-width: 574px) {
+    width: 320px;
+  }
 
   /* 290px+15px+15px; */
   /* @media screen and (min-width: 320px) {
     width: 320px;
   } */
-
-  /* @media screen and (min-width: 575px) {
+  /* 240*2 картки + 30 марджин між ними і 15 паддінги 2 */
+  @media screen and (min-width: 575px) {
     width: 570px;
-  } */
+  }
 
   /* @media screen and (min-width: 767px) {
     width: 1200px;
@@ -88,13 +93,14 @@ img {
 }
 .btn {
   cursor: pointer;
+  border: none;
 }
 /* ======================= HEADER ======================= */
 .header-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 /* .header {
 } */
@@ -113,8 +119,10 @@ img {
 
 /* .header-nav {
 } */
-/* .header-btn {
-} */
+.header-btn {
+  border: none;
+  background-color: #fff;
+}
 /* =======================  MAIN HERO SECTION ======================= */
 .main {
   text-align: center;
@@ -353,7 +361,7 @@ img {
 /* ======================= FOOTER  ======================= */
 .footer {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 .footer-container::before {
   content: "";
@@ -362,15 +370,29 @@ img {
   height: 1px;
   background-color: var(--footer-border);
 }
-
 .footer-list {
   margin-top: 15px;
-
+  margin-bottom: 0px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 5px;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  /* прибираєм крапочки списку */
 }
-/* .footer-list-item {
-} */
+
+.footer-list-item:not(:first-child):before {
+  content: "";
+  display: inline-block;
+  align-items: center;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: var(--footer-border);
+}
+
 .footer-link {
   font-weight: 500;
   font-size: 11px;
@@ -379,7 +401,6 @@ img {
   color: var(--main-font-color);
 }
 /* .footer-container {
-  border-top: 1px solid var(--footer-border);
 } */
 .footer-logo {
   display: block;
@@ -391,3 +412,46 @@ img {
 .footer-second-logo {
   color: var(--logo-secondary-font-color);
 }
+
+/* МЕНЮ КНОПКА codepen */
+
+/* #menu35:checked + label {
+  div:first-child {
+    top: 2%;
+    left: 7%;
+    width: 50%;
+    transform: rotate(45deg);
+    transition: width 0.15s, top 0.15s 0.15s, left 0.15s 0.15s,
+      transform 0.15s 0.15s;
+  }
+  div:nth-child(2) {
+    transform: rotate(-45deg);
+    transition: transform 0.15s 0.15s;
+  }
+  div:nth-child(3) {
+    width: 50%;
+    right: 7%;
+    top: 47%;
+    transform: rotate(45deg);
+    transition: width 0.15s, top 0.15s 0.15s, right 0.15s 0.15s,
+      transform 0.15s 0.15s;
+  }
+} */
+/* #menu2:checked+label {
+  div:first-child {
+    opacity: 0;
+    top: 20px;
+    width: 0px;
+    transform: rotate(-45deg);
+  }
+  div:nth-child(2) {
+    top: 12px;
+    transform: rotate(-45deg);
+    width: 35px;
+  }
+  div:nth-child(3) {
+    top: 12px;
+    transform: rotate(45deg);
+    width: 35px;
+  }
+} */
