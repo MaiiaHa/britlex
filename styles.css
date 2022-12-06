@@ -179,6 +179,7 @@ img {
   .main-title {
     margin-top: 17px;
 
+    font-weight: 600;
     font-size: 34px;
     line-height: calc(45 / 34);
   }
@@ -216,7 +217,7 @@ img {
   line-height: calc(21 / 14);
 }
 @media screen and (min-width: 575px) {
-  .main-title {
+  .main-description {
     margin-top: 25px;
     margin-bottom: 37px;
 
@@ -225,13 +226,13 @@ img {
   }
 }
 @media screen and (min-width: 767px) {
-  .main-title {
+  .main-description {
     margin-top: 26px;
     margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 992px) {
-  .main-title {
+  .main-description {
     margin-top: 27px;
     margin-bottom: 33px;
 
@@ -240,7 +241,7 @@ img {
   }
 }
 @media screen and (min-width: 1368px) {
-  .main-title {
+  .main-description {
     margin-top: 40px;
     margin-bottom: 60px;
 
@@ -261,7 +262,7 @@ img {
   border-radius: 5px;
 }
 @media screen and (min-width: 575px) {
-  .main-title {
+  .main-btn {
     padding: 24px 100px;
 
     font-weight: 500;
@@ -270,14 +271,14 @@ img {
   }
 }
 @media screen and (min-width: 767px) {
-  .main-title {
+  .main-btn {
     padding: 19px 67px;
 
     font-weight: 400;
   }
 }
 @media screen and (min-width: 992px) {
-  .main-title {
+  .main-btn {
     padding: 22px 87px;
 
     font-weight: 400;
@@ -286,7 +287,7 @@ img {
   }
 }
 @media screen and (min-width: 1368px) {
-  .main-title {
+  .main-btn {
     padding: 32px 117px;
 
     font-weight: 400;
@@ -299,6 +300,12 @@ img {
 .skills {
   padding-bottom: 50px;
 }
+@media screen and (min-width: 575px) {
+  .skills {
+    padding-bottom: 84px;
+  }
+}
+
 .skills-title {
   text-align: center;
 
@@ -308,45 +315,77 @@ img {
   line-height: calc(80 / 24);
   color: var(--additional-font-color);
 }
-/* @media screen and (min-width: 575px) {
-  .main-title {
+@media screen and (min-width: 575px) {
+  .skills-title {
+    padding-bottom: 34px;
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: calc(80 / 30);
   }
 }
 @media screen and (min-width: 767px) {
-  .main-title {
+  .skills-title {
+    padding-bottom: 36px;
   }
 }
 @media screen and (min-width: 992px) {
-  .main-title {
+  .skills-title {
+    padding-bottom: 50px;
+
+    font-weight: 600;
+    font-size: 36px;
+    line-height: calc(80 / 36);
   }
 }
 @media screen and (min-width: 1368px) {
-  .main-title {
+  .skills-title {
+    padding-bottom: 95px;
+
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
   }
-} */
+}
+
+@media screen and (min-width: 575px) {
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 
 .skills-card {
   background-color: var(--cards-bg-color);
 }
-/* @media screen and (min-width: 575px) {
-  .main-title {
+@media screen and (min-width: 575px) {
+  .skills-card {
+    display: flex;
+    width: 240px;
+    min-height: 534px;
   }
 }
 @media screen and (min-width: 767px) {
-  .main-title {
+  .skills-card {
   }
 }
 @media screen and (min-width: 992px) {
-  .main-title {
+  .skills-card {
   }
 }
 @media screen and (min-width: 1368px) {
-  .main-title {
+  .skills-card {
   }
-} */
+}
 
 .skills-card:not(:last-child) {
   margin-bottom: 20px;
+}
+@media screen and (min-width: 575px) {
+  .skills-card:not(:last-child) {
+    margin-bottom: 0px;
+  }
 }
 
 /* .skills-list {
@@ -412,8 +451,9 @@ img {
 
   /* transform: rotate(-0.26deg); */
 }
-/* @media screen and (min-width: 575px) {
-  .main-title {
+@media screen and (min-width: 575px) {
+  .skills-btn {
+    margin-top: auto;
   }
 }
 @media screen and (min-width: 767px) {
@@ -427,10 +467,29 @@ img {
 @media screen and (min-width: 1368px) {
   .main-title {
   }
-} */
+}
 
 .card {
   padding: 10px 15px 45px;
+}
+@media screen and (min-width: 575px) {
+  .card {
+    padding: 10px 15px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 767px) {
+  .card {
+  }
+}
+@media screen and (min-width: 992px) {
+  .card {
+  }
+}
+@media screen and (min-width: 1368px) {
+  .card {
+  }
 }
 /* ======================= ABOUT_US SECTION ======================= */
 .about-us {
@@ -444,22 +503,33 @@ img {
   line-height: calc(80 / 24);
   color: var(--additional-font-color);
 }
-/* @media screen and (min-width: 575px) {
-  .main-title {
+@media screen and (min-width: 575px) {
+  .bout-us-title {
+    font-size: 30px;
+    line-height: calc(80 / 30);
   }
 }
 @media screen and (min-width: 767px) {
-  .main-title {
+  .bout-us-title {
+    padding-bottom: 5px;
   }
 }
 @media screen and (min-width: 992px) {
-  .main-title {
+  .bout-us-title {
+    padding-bottom: 13px;
+
+    font-size: 36px;
+    line-height: calc(80 / 36);
   }
 }
 @media screen and (min-width: 1368px) {
-  .main-title {
+  .bout-us-title {
+    padding-bottom: 23px;
+
+    font-size: 48px;
+    line-height: calc(80 / 48);
   }
-} */
+}
 
 .about-us-description {
   font-size: 13px;
