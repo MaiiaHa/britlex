@@ -711,6 +711,35 @@ img {
 
   color: var(--secondary-font-color);
 }
+
+@media screen and (min-width: 575px) {
+  .price-list-item {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .price-list-item {
+    font-size: 20px;
+    line-height: calc(28 / 20);
+  }
+}
+@media screen and (min-width: 992px) {
+  .price-list-item {
+    font-size: 22px;
+    line-height: calc(34 / 22);
+  }
+}
+@media screen and (min-width: 1368px) {
+  .price-list-item {
+    margin-top: 40px;
+
+    font-size: 30px;
+    line-height: calc(48 / 30);
+  }
+}
+
 .price-description {
   margin-top: 25px;
 
@@ -718,6 +747,35 @@ img {
   font-size: 13px;
   line-height: calc(20 / 13);
 }
+
+@media screen and (min-width: 575px) {
+  .price-description {
+    margin-top: 20px;
+
+    font-size: 14px;
+    line-height: calc(21 / 14);
+  }
+}
+@media screen and (min-width: 767px) {
+  .price-description {
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .price-description {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+}
+@media screen and (min-width: 1368px) {
+  .price-description {
+    margin-top: 20px;
+
+    font-size: 20px;
+    line-height: calc(30 / 20);
+  }
+}
+
 .price-amount {
   margin-top: 30px;
   margin-left: auto;
@@ -736,12 +794,61 @@ img {
   background-color: var(--price-bg-color);
   border-radius: 5px;
 }
+
+@media screen and (min-width: 575px) {
+  .price-amount {
+    margin-top: 35px;
+
+    width: 205px;
+
+    font-size: 22px;
+    line-height: calc(33 / 22);
+  }
+}
+@media screen and (min-width: 767px) {
+  .price-amount {
+    font-size: 22px;
+    line-height: calc(33 / 22);
+  }
+}
+@media screen and (min-width: 992px) {
+  .price-amount {
+    font-size: 24px;
+    line-height: calc(36 / 24);
+  }
+}
+@media screen and (min-width: 1368px) {
+  .price-amount {
+    font-size: 30px;
+    line-height: calc(45 / 30);
+  }
+}
 .price-amount-desc {
   font-weight: 400;
   font-size: 14px;
   line-height: calc(21 / 14);
 
   color: var(--secondary-price-font-color);
+}
+@media screen and (min-width: 575px) {
+  .price-amount {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+}
+/* @media screen and (min-width: 767px) {
+  .price-amount {
+  }
+}
+@media screen and (min-width: 992px) {
+  .price-amount {
+  }
+} */
+@media screen and (min-width: 1368px) {
+  .price-amount {
+    font-size: 18px;
+    line-height: calc(27 / 18);
+  }
 }
 
 .price-card:not(:last-child) {
@@ -752,6 +859,28 @@ img {
   text-align: center;
   padding-bottom: 50px;
 }
+
+@media screen and (min-width: 575px) {
+  .contacts {
+    padding-bottom: 145px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .contacts {
+    padding-bottom: 115px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contacts {
+    padding-bottom: 160px;
+  }
+}
+@media screen and (min-width: 1368px) {
+  .contacts {
+    padding-bottom: 130px;
+  }
+}
+
 .contacts-title {
   padding-bottom: 30px;
   font-weight: 600;
@@ -759,6 +888,35 @@ img {
   line-height: calc(80 / 24);
   color: var(--additional-font-color);
 }
+@media screen and (min-width: 575px) {
+  .contacts-title {
+    font-size: 30px;
+    line-height: calc(80 / 30);
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .contacts-title {
+    padding-bottom: 5px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contacts-title {
+    padding-bottom: 5px;
+
+    font-size: 36px;
+    line-height: calc(80 / 36);
+  }
+}
+@media screen and (min-width: 1368px) {
+  .contacts-title {
+    padding-bottom: 35px;
+
+    font-size: 48px;
+    line-height: calc(80 / 48);
+  }
+}
+
 .contacts-description {
   margin-top: 30px;
 
@@ -766,6 +924,39 @@ img {
   font-size: 14px;
   line-height: calc(21 / 14);
 }
+@media screen and (min-width: 575px) {
+  .contacts-description {
+    margin-top: 35px;
+
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+}
+@media screen and (min-width: 767px) {
+  .contacts-description {
+    margin-top: 5px;
+
+    font-size: 14px;
+    line-height: calc(21 / 14);
+  }
+}
+@media screen and (min-width: 992px) {
+  .contacts-description {
+    margin-top: 5px;
+
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+}
+@media screen and (min-width: 1368px) {
+  .contacts-description {
+    margin-top: 30px;
+
+    font-size: 20px;
+    line-height: calc(30 / 20);
+  }
+}
+
 .contacts-form {
   margin-top: 30px;
 
@@ -773,7 +964,36 @@ img {
   flex-direction: column;
   row-gap: 15px;
 }
+
+@media screen and (min-width: 575px) {
+  .contacts-form {
+    /* display: inline; */
+    position: relative;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .contacts-form {
+    display: flex;
+    margin-top: 25px;
+    row-gap: 6px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contacts-form {
+    margin-top: 34px;
+    row-gap: 14px;
+  }
+}
+@media screen and (min-width: 1368px) {
+  .contacts-form {
+    margin-top: 50px;
+    row-gap: 12px;
+  }
+}
+
 .contacts-email {
+  margin-top: 30px;
   width: 100%;
   height: 50px;
 
@@ -782,10 +1002,59 @@ img {
   color: var(--main-font-color);
 
   border: 1px solid var(--main-font-color);
-  border-radius: 5px;
+  border-radius: 10px;
 
   padding-left: 25px;
 }
+
+@media screen and (min-width: 575px) {
+  .contacts-email {
+    margin-top: 60px;
+
+    width: 100%;
+    height: 60px;
+
+    font-size: 13px;
+    line-height: calc(20 / 13);
+  }
+}
+@media screen and (min-width: 767px) {
+  .contacts-email {
+    width: 283;
+    height: 50px;
+
+    font-size: 12px;
+    line-height: calc(18 / 12);
+    border-radius: 5px;
+
+    padding-left: 25px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contacts-email {
+    width: 323px;
+    height: 50px;
+
+    font-size: 14px;
+    line-height: calc(21 / 14);
+    border-radius: 10px;
+
+    padding-left: 30px;
+  }
+}
+@media screen and (min-width: 1368px) {
+  .contacts-email {
+    width: 450px;
+    height: 80px;
+
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    border-radius: 10px;
+
+    padding-left: 25px;
+  }
+}
+
 .contacts-btn {
   height: 60px;
 
@@ -798,8 +1067,58 @@ img {
 
   background-color: var(--btn-bg-color);
   color: var(--btn-font-color);
-  border-radius: 5px;
+  border-radius: 10px;
 }
+
+@media screen and (min-width: 575px) {
+  .contacts-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 193px;
+    height: 60px;
+
+    font-size: 16px;
+    line-height: calc(24 / 16);
+
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .contacts-btn {
+    height: 50px;
+
+    font-size: 13px;
+    line-height: calc(20 / 13);
+
+    margin-left: 6px;
+
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contacts-btn {
+    height: 60px;
+
+    font-size: 16px;
+    line-height: calc(24 / 16);
+
+    margin-left: 14px;
+
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 1368px) {
+  .contacts-btn {
+    height: 80px;
+
+    font-size: 20px;
+    line-height: calc(30 / 20);
+
+    margin-left: 12px;
+  }
+}
+
 /* ======================= FOOTER  ======================= */
 .footer {
   text-align: center;
@@ -812,6 +1131,11 @@ img {
   height: 1px;
   background-color: var(--footer-border);
 }
+/* @media screen and (min-width: 575px) {
+  .footer-container {
+    display: flex;
+  }
+} */
 .footer-list {
   margin-top: 15px;
   margin-bottom: 0px;
@@ -851,6 +1175,37 @@ img {
   line-height: calc(36 / 24);
   padding-top: 25px;
 }
+
+@media screen and (min-width: 575px) {
+  .footer-logo {
+    display: block;
+
+    font-size: 30px;
+    line-height: calc(45 / 30);
+    padding-top: 25px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .footer-logo {
+    display: block;
+    font-size: 30px;
+    line-height: calc(45 / 30);
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer-logo {
+    padding-top: 22px;
+  }
+}
+@media screen and (min-width: 1368px) {
+  .footer-logo {
+    font-size: 36px;
+    line-height: calc(54 / 36);
+    padding-top: 30px;
+  }
+}
+
 .footer-second-logo {
   color: var(--logo-secondary-font-color);
 }
