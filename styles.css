@@ -388,7 +388,7 @@ img {
   .skills-card:nth-child(4) {
     display: flex;
     width: 462px;
-    height: 210px;
+    min-height: 210px;
   }
 
   /* .skills-content {
